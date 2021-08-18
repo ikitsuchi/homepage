@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ikitsu's homepage</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="icon" sizes="48x48" type="image/png" href="assets/css/images/favicon.ico">
+        <meta name="theme-color" content="pink">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style type="text/css">
+            body {
+                height: 100%;
+                background-color: #ffffff;
+                background-image: url("images/overlay.png");
+                background-repeat: no-repeat;
+                background-size: 1920px 1214px, cover, cover;
+                background-position: center center;
+                background-attachment: fixed;
+            }
+
+            body:after {
+                content: '';
+                display: block;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: inherit;
+                opacity: 0;
+                z-index: 1;
+                background-color: #ffffff;
+                background-image: url("images/overlay.png");
+                background-size: 1920px 1214px, cover, cover;
+                background-position: center center;
+                -moz-transition: opacity 1.75s ease-out;
+                -webkit-transition: opacity 1.75s ease-out;
+                -ms-transition: opacity 1.75s ease-out;
+                transition: opacity 1.75s ease-out;
+								filter: blur(20px);
+            }
+
+            body.is-preload:after {
+                opacity: 1;
+            }
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main">
+						<header>
+							<span class="avatar"><img src="images/avatar.png" height="120px" width="120px" alt="" /></span>
+							<h1>IKITSU</h1>
+							<p>JUST 4 FUN</p>
+						</header>
+						<footer>
+							<ul class="icons">
+								<li><a href="https://t.me/ikitsuchi" class="icon brands fa-telegram"><span class="label">Telegram</span></a></li>
+								<li><a href="https://twitter.com/ikitsuchi" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://github.com/ikitsuchi" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<li><a href="mailto:ikitsuchi@outlook.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</footer>
+							<ul class="actions special">
+								<li><a href="https://oi.ikitsu.top" class="button">BLOG</a></li>
+							</ul>
+							<ul class="actions special">
+								<li><a href="https://oi.ikitsu.top" class="button">OI BLOG ARCHIVE</a></li>
+							</ul>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+                            <a>&copy; IKITSU</a>
+						<ul class="copyright">
+                            <li>Use: <a href="https://github.com/BakaChinatsu/uuz-h5theme">uuz-h5theme</a></li>
+							<li>Powered: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script>
+				if ('addEventListener' in window) {
+					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
+					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+				}
+			</script>
+
+	</body>
+</html>
